@@ -7,9 +7,9 @@ jenkins:
          password: ${JENKINS_ADMIN_PASSWORD}
   authorizationStrategy:
     globalMatrix:
-      permissions:
-        - "Overall/Administer:admin"
-        - "Overall/Read:authenticated"
+    permissions:
+      - "Overall/Administer:admin"
+      - "Overall/Read:authenticated"
   remotingSecurity:
     enabled: true
 security:
