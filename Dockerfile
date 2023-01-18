@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts-alpine-jdk17
+FROM jenkins/jenkins:latest-jdk17
 LABEL Maintainer="Vimlesh Kumar"
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/jenkins-config.yaml
