@@ -1,4 +1,5 @@
 FROM jenkins/jenkins:latest
+LABEL Maintainer="Vimlesh Kumar"
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/jenkins-config.yaml
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
