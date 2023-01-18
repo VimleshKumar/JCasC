@@ -10,11 +10,11 @@ jenkins:
       permissions:
         - "Overall/Administer:admin"
         - "Overall/Read:authenticated"
-  security:
-    queueItemAuthenticator:
-      authenticators:
-      - global:
-          strategy: triggeringUsersAuthorizationStrategy
+security:
+  queueItemAuthenticator:
+    authenticators:
+    - global:
+        strategy: triggeringUsersAuthorizationStrategy
 unclassified:
   location:
     url: http://server_ip:8080/
